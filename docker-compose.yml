@@ -1,0 +1,25 @@
+version: '3'
+
+services: 
+  db:
+    image: db
+    container_name: "db01"
+    ports:
+    - "27017:27017"
+    volumes: 
+    - db-data:/data/db
+  
+  app:
+    image: app
+    container_name: "app01"
+    ports: 
+    - "3000:3000"
+  
+  webclient:
+    image: webclient
+    container_name: "webclient01"
+    ports:
+    - "8080:80"
+
+volumes:
+  db-data:

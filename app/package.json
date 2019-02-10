@@ -1,0 +1,12 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "body-parser": "^1.18.3",
+    "mongoose": "^5.4.11"
+  }
+}
